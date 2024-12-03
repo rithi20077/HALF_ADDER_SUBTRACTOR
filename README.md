@@ -4,10 +4,7 @@ Implementation-of-Half-Adder-and-Half Subtractor-circuit
 
 **AIM:**
 
-To design a half adder and half subtractor circuit and verify its truth table in Quartus using Verilog programming.
-
-**Equipments Required:**
-
+To design 
 Hardware – PCs, Cyclone II , USB flasher 
 
 Software – Quartus prime Theory Adders are digital circuits that carry out the addition of numbers.
@@ -35,6 +32,11 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
+ ![TRUTH TABLE](https://github.com/user-attachments/assets/33698ed3-9f1e-4c6b-9a1b-7e9150570dae)
+
+ ![TRUTH](https://github.com/user-attachments/assets/2dd9cc71-f098-4f47-abfc-3869760e2da1)
+
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -52,10 +54,49 @@ Figure -02 HALF Subtractor
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+    i)HALF ADDER
+
+    module ha(a,b,sum,carry);
+    input a,b;
+    output sum,carry;
+    assign sum= (a ^ b);
+    assign carry= ( a & b);
+    endmodule
+
+    ii)HALF SUBTRACTOR
+
+    module hs(a,b,difference,borrow);
+    input a,b;
+    output difference,borrow;
+    assign difference= (a ^ b);
+    assign borrow= ( ~a & b);
+    endmodule
+
+
+
+
+Developed by: RITHIKA M 
+
+RegisterNumber: 24900286
 
 **RTL Schematic**
+![HALF](https://github.com/user-attachments/assets/5b77a228-9c18-4d3c-abe4-b10b23fa1723)
+
+![HALF2](https://github.com/user-attachments/assets/a0c64c12-b6e7-4087-9b88-c4d13a207474)
+
+
+
+
 
 **Output/TIMING Waveform**
 
+![H](https://github.com/user-attachments/assets/6b1be367-9e56-4c9a-bbec-b02e241325fb)
+
+![H2](https://github.com/user-attachments/assets/11a73544-6325-4ea4-bd3d-a9f880b73db2)
+
+
+
 **Result:**
+
+ Thus, a half adder and half subtractor circuit verified and  its truth table in quartus using verilog programming verified.
+
